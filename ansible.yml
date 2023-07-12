@@ -1,9 +1,5 @@
 - hosts: all
   become: true
-  pre_tasks:
-    - ping:
-      ignore_unreachable: yes
-      register: ping
 
   tasks: 
      - name: delete old deployment
